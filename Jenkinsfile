@@ -4,11 +4,11 @@ pipeline {
     environment {
         AWS_ACCESS_KEY_ID         = credentials('AWS_ACCESS_KEY_ID')
         AWS_SECRET_ACCESS_KEY     = credentials('AWS_SECRET_ACCESS_KEY')
-        AWS_DEFAULT_REGION        = 'UPDATE_THIS_VALUE'
-        STAGING_FUNCTION_NAME     = 'UPDATE_THIS_VALUE'
-        STAGING_URL               = 'UPDATE_THIS_VALUE'
-        PRODUCTION_FUNCTION_NAME  = 'UPDATE_THIS_VALUE'
-        PRODUCTION_URL            = 'UPDATE_THIS_VALUE'
+        AWS_DEFAULT_REGION        = 'eu-north-1'
+        STAGING_FUNCTION_NAME     = 'SampleApplication-staging'
+        STAGING_URL               = 'https://xbunipz62gr4bjhulmzghbvvka0dikfs.lambda-url.eu-north-1.on.aws/'
+        PRODUCTION_FUNCTION_NAME  = 'SampleApplication-production'
+        PRODUCTION_URL            = 'https://necr47otjdseyy52tikftx5nmu0zoyrd.lambda-url.eu-north-1.on.aws/'
     }
 
     stages {
